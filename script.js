@@ -1,39 +1,20 @@
-let fruits = ["apple", "banana", "giwi", "peach"];
-
-fruits.forEach((item) => {
-  console.log(item)
-});
 
 
-let word = ["apple", "banana",
- false, 13,
-"hello", 
-["1", "2", "3"], 
-{ name: "Peter", 
-Lastname:"Parker" },
- 12345];
-
-word.forEach((item) => {
-  console.log(typeof(item))
-});
-
-
-
-let people = [
+let person = [
   {
     name: "Peter",
-    lastname: "Parker",
-    age: 34
+    resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum ducimus et laboriosam quae dolore iure recusandae? Quae cumque corrupti eum ipsam nostrum, quasi recusandae maxime deserunt vitae, eveniet perferendis.",
+    profession: "java"
   },
   {
     name: "Elon",
-    lastname: "Mask",
-    age: 34
+    resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum ducimus et laboriosam quae dolore iure recusandae? Quae cumque corrupti eum ipsam nostrum, quasi recusandae maxime deserunt vitae, eveniet perferendis.",
+    profession: "java"
   },
   {
     name: "Sadyr",
-    lastName: "Japarov",
-    age: 45
+    resume: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum ducimus et laboriosam quae dolore iure recusandae? Quae cumque corrupti eum ipsam nostrum, quasi recusandae maxime deserunt vitae, eveniet perferendis.",
+    profession: "java"
   },
   {
     name: "Sam",
@@ -41,14 +22,17 @@ let people = [
     age: 57
   },
 ]
-let container = document.querySelector("#container")
 
-people.forEach((item) => {
-  let person = document.createElement('div');
+const resume1 = document.querySelector('#container');
+resume1.forEach(item => {
+  let resume1 = document.createElement('div');
   let name = `${item.name}, `;
-  let lastname = `${item.lastname}, `;
-  let age = `${item.age}, `
-  person.append(name);
-  person.append(lastname);
-  person.append(age);
+  let resume = `${item.resume}, `;
+  let profession = `${item.profession}, `
+
+  articleElement.append(name);
+  articleElement.append(resume);
+  articleElement.append(profession);
+  resume1.append(div);
 });
+
