@@ -19,3 +19,30 @@ word.forEach((item) => {
 
 
 
+let people = [
+  {
+    name: "Peter",
+    lastName: "Parker",
+    age: 34
+  },
+  {
+    name: "Elon",
+    lastName: "Mask",
+    age: 34
+  },
+  {
+    name: "Sadyr",
+    lastName: "Japarov",
+    age: 45
+  },
+  {
+    name: "Sam",
+    lastName: "Parker",
+    age: 57
+  },
+]
+
+people.forEach((item) => {
+  const div = document.createElement('div');
+  document.write(item);
+});
