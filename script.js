@@ -22,12 +22,12 @@ word.forEach((item) => {
 let people = [
   {
     name: "Peter",
-    lastName: "Parker",
+    lastname: "Parker",
     age: 34
   },
   {
     name: "Elon",
-    lastName: "Mask",
+    lastname: "Mask",
     age: 34
   },
   {
@@ -37,12 +37,18 @@ let people = [
   },
   {
     name: "Sam",
-    lastName: "Parker",
+    lastname: "Parker",
     age: 57
   },
 ]
+let container = document.querySelector("#container")
 
 people.forEach((item) => {
-  const div = document.createElement('div');
-  document.write(item);
+  let person = document.createElement('div');
+  let name = `${item.name}, `;
+  let lastname = `${item.lastname}, `;
+  let age = `${item.age}, `
+  person.append(name);
+  person.append(lastname);
+  person.append(age);
 });
